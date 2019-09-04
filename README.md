@@ -1,1 +1,1 @@
-various
+Just some simple projects.
