@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 # Author: Matteo Rondini - Version 1.00
 
+=======
+>>>>>>> master
 import requests
 from random import randint
 from pyfiglet import figlet_format
@@ -30,5 +33,8 @@ def jokes():
             f"...I have {lendict} more jokes about this topic",
         )
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 jokes()
