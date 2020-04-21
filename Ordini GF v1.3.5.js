@@ -14,22 +14,22 @@ function sendEmail(e) {
   htmlBody += "</table>";
   Logger.log(htmlBody);
   var name = values[3];
-  var SendTo = "rondinix@gmail.com";
+  var SendTo = "xxx@xxx.xxx";
   var Subject = "Nuovo ordine da " + name;
   if (htmlBody) {
       GmailApp.sendEmail(
         SendTo,
         Subject,
       '',{
-      from : 'rondinix@gmail.com',
-      replyto: 'rondinix@gmail.com',
+      from : 'xxx@xxx.xxx',
+      replyto: 'xxx@xxx.xxx',
       htmlBody: htmlBody,
       });
       
     }
   Logger.log('Email sent: '+Subject);
 
-  var ssdest = SpreadsheetApp.openById("1DVwIfpyzXj-ov00Qlv_IBOmAgCs70WMeHsm10azVMXY");
+  var ssdest = SpreadsheetApp.openById("ID");
   var sheetdest = ssdest.getSheetByName("MASTER");
   var lastRow = sheetdest.getLastRow();
   for (var i=0; i < values.length; i++) {
